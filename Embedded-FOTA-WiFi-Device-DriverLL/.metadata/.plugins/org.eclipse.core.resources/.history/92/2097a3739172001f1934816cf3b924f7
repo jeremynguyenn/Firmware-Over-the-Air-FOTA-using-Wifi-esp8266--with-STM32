@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include "stm32f4xx.h"
+#include "fpu.h"
+#include "bsp.h"
+#include "adc.h"
+#include "circular_buffer.h"
+#include "fota_processor.h"
+
+#define SSID_NAME  "TP-Link_9A4E"
+#define PASSKEY    "94933581"
+
+
+char version_buff[50] = {0};
+
+
+int main()
+{
+	/*Enable FPU*/
+	fpu_enable();
+
+	/*Initialize debug UART*/
+	debug_uart_init();
+	esp_uart_init();
+
+	/*Initialize timebase*/
+	timebase_init();
+
+	/*Initialize LED*/
+	led_init();
+
+	/*Initialize Push button*/
+	button_init();
+
+
+
+	if(get_btn_state()){
+
+		esp8266_init(SSID_NAME,PASSKEY);
+		esp82xx_get_version_file(version_buff);
+
+
+		firmware_update();
+		jump_to_app(NEW_FIRMWARE_START_ADDRESS);
+
+	}
+	else
+	{
+
+		buffer_send_string("............Running Last Update.........\n\r",debug_port);
+
+		jump_to_app(NEW_FIRMWARE_START_ADDRESS);
+
+	}
+
+	return 0;
+}
+

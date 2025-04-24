@@ -1,0 +1,10 @@
+12:38:27 **** Incremental Build of configuration Debug for project 9_esp82xx_fota2 ****
+make -j4 all 
+arm-none-eabi-size   9_esp82xx_fota2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10912	    108	  47204	  58224	   e370	9_esp82xx_fota2.elf
+Finished building: default.size.stdout
+ 
+
+12:38:27 Build Finished. 0 errors, 0 warnings. (took 434ms)
+

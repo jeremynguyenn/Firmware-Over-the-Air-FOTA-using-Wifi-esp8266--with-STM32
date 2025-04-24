@@ -1,0 +1,9 @@
+C:/Users/user/Documents/Embedded-FOTA-WiFi/9_esp82xx_fota2/chip_headers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+../Src/esp82xx_driver.c:25:5:__io_putchar	16	static
+../Src/esp82xx_driver.c:31:6:debug_uart_init	8	static
+../Src/esp82xx_driver.c:99:6:esp_rs_pin_init	4	static
+../Src/esp82xx_driver.c:112:6:esp_rs_pin_enable	4	static
+../Src/esp82xx_driver.c:117:6:esp_uart_init	8	static
+../Src/esp82xx_driver.c:167:13:uart_write	16	static
+../Src/esp82xx_driver.c:175:17:compute_uart_bd	16	static
+../Src/esp82xx_driver.c:180:13:uart_set_baudrate	16	static

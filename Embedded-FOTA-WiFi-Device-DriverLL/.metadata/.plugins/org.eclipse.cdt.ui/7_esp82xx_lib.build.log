@@ -1,0 +1,10 @@
+21:56:38 **** Incremental Build of configuration Debug for project 7_esp82xx_lib ****
+make -j4 all 
+arm-none-eabi-size   7_esp82xx_lib.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6824	    108	  45644	  52576	   cd60	7_esp82xx_lib.elf
+Finished building: default.size.stdout
+ 
+
+21:56:39 Build Finished. 0 errors, 0 warnings. (took 553ms)
+

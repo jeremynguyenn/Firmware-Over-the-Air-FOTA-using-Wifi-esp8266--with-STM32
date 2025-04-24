@@ -1,0 +1,22 @@
+12:38:18 **** Incremental Build of configuration Debug for project 9_esp82xx_fota2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/esp82xx_lib.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"C:/Users/user/Documents/Embedded-FOTA-WiFi/9_esp82xx_fota2/chip_headers/CMSIS/Include" -I"C:/Users/user/Documents/Embedded-FOTA-WiFi/9_esp82xx_fota2/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/esp82xx_lib.d" -MT"Src/esp82xx_lib.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/esp82xx_lib.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"C:/Users/user/Documents/Embedded-FOTA-WiFi/9_esp82xx_fota2/chip_headers/CMSIS/Include" -I"C:/Users/user/Documents/Embedded-FOTA-WiFi/9_esp82xx_fota2/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "9_esp82xx_fota2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\Documents\Embedded-FOTA-WiFi\9_esp82xx_fota2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_esp82xx_fota2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 9_esp82xx_fota2.elf
+ 
+arm-none-eabi-size   9_esp82xx_fota2.elf 
+arm-none-eabi-objdump -h -S  9_esp82xx_fota2.elf  > "9_esp82xx_fota2.list"
+   text	   data	    bss	    dec	    hex	filename
+  10912	    108	  47204	  58224	   e370	9_esp82xx_fota2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 9_esp82xx_fota2.list
+ 
+12:38:27 **** Incremental Build of configuration Debug for project 9_esp82xx_fota2 ****
+make -j4 all 
+arm-none-eabi-size   9_esp82xx_fota2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10912	    108	  47204	  58224	   e370	9_esp82xx_fota2.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,7 @@
+../Src/esp82xx_lib.c:33:6:esp8266_init	16	static
+../Src/esp82xx_lib.c:40:14:esp82xx_startup_test	8	static
+../Src/esp82xx_lib.c:56:13:esp82xx_reset	8	static
+../Src/esp82xx_lib.c:74:13:esp82xx_sta_mode	8	static
+../Src/esp82xx_lib.c:90:13:esp82xx_ap_connect	96	static
+../Src/esp82xx_lib.c:113:6:esp82xx_get_firmware	656	static
+../Src/esp82xx_lib.c:161:6:esp82xx_get_version_file	656	static

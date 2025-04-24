@@ -1,0 +1,7 @@
+C:/Users/Ninsaw/Documents/BareMetal-CircularBuffer/6_uart_comm_buff/chip_headers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+../Src/uart.c:25:5:__io_putchar	16	static
+../Src/uart.c:31:6:debug_uart_init	8	static
+../Src/uart.c:88:6:slave_dev_uart_init	8	static
+../Src/uart.c:138:13:uart_write	16	static
+../Src/uart.c:146:17:compute_uart_bd	16	static
+../Src/uart.c:151:13:uart_set_baudrate	16	static
