@@ -1,6 +1,6 @@
 # **Firmware Over-the-Air (FOTA) System**
 
-This project demonstrates a reliable Firmware Over-the-Air (FOTA) update system using the **ESP82xx Wi-Fi module** and **STM32F4 microcontroller**. The solution is designed for seamless firmware retrieval, parsing, and updates, ensuring operational stability and efficiency. The project focuses on simplicity and robustness, providing a stable platform for further development in embedded systems.
+This project demonstrates a reliable Firmware Over-the-Air (FOTA) update system using the **ESP82xx Wi-Fi module** and **STM32F411 microcontroller**. The solution is designed for seamless firmware retrieval, parsing, and updates, ensuring operational stability and efficiency. The project focuses on simplicity and robustness, providing a stable platform for further development in embedded systems.
 
 ---
 ## **development driver for each device **
