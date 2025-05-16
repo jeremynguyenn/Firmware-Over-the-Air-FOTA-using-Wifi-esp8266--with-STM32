@@ -1,6 +1,6 @@
 /*
  * File : main.c
- * Author : Prudhvi Raj Belide
+ * Author : Nguyen Nhan
  * Description : This file initializes peripherals, checks for button press to trigger FOTA (Firmware Over-the-Air) update using
  * ESP8266 and jumps to the updated firmware or the last valid firmware.
  */
